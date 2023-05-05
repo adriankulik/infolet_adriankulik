@@ -1,6 +1,6 @@
 # Adrian Kulik - Infolet Recruitment
 
-[http://localhost:3000](http://localhost:3000)
+Live app hosted on [Netlify](https://aesthetic-arithmetic-76f7c9.netlify.app).
 
 ## About
 
