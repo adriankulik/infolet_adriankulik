@@ -2,14 +2,13 @@ import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import productList from "../data/mockProductsAPIResponse";
 import Card from "react-bootstrap/Card";
-import { cartAddition, cartReset } from "../redux/cartSlice";
+import { cartAddition } from "../redux/cartSlice"; //todo cartReset
 import { pointAddition } from "../redux/pointSlice";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import React from "react";
 import pointCounter from "../functions/pointCounter";
 
 function Shop() {
-  const cartValue = useSelector((state) => state.cart.value);
   const dispatch = useDispatch();
 
   return (
