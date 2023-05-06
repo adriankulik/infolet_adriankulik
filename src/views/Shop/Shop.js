@@ -1,12 +1,12 @@
 import React from "react";
-import Navigation from "../components/Nav";
-import Shop from "../components/Shop";
+import Navigation from "../../components/Nav";
+import Products from "../../components/Products";
 
 export default function User() {
   return (
     <div>
       <Navigation />
-      <Shop />
+      <Products />
     </div>
   );
 }

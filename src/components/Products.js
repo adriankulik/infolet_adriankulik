@@ -2,19 +2,21 @@ import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 import productList from "../data/mockProductsAPIResponse";
 import Card from "react-bootstrap/Card";
+import Row from "react-bootstrap/Row";
 import { cartAddition } from "../redux/cartSlice"; //todo cartReset
 import { pointAddition } from "../redux/pointSlice";
 import { useDispatch } from "react-redux";
 import React from "react";
 import pointCounter from "../functions/pointCounter";
 
-function Shop() {
+const Products = () => {
   const dispatch = useDispatch();
 
   return (
-    <Stack className="col-md-5 mx-auto" direction="vertical" gap={3}>
+    <Stack className="col-md-5 mx-auto pt-5" direction="vertical" gap={3}>
+      <Row className=".mb-5"></Row>
       {productList.map((product) => (
-        <Card style={{ width: "18rem" }} key={product.id}>
+        <Card key={product.id}>
           <Card.Img src={product.image} />
           <Card.Body>
             <Card.Title>{product.title}</Card.Title>
@@ -33,6 +35,6 @@ function Shop() {
       ))}
     </Stack>
   );
-}
+};
 
-export default Shop;
+export default Products;
